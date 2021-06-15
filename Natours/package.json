@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass css/main.scss css/style.css -w",
+    "live-server": "live-server --wait=100",
+    "start": "run-p compile:sass live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/norandiaconu/advanced-css.git"
+  },
+  "author": "Noran Diaconu",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
