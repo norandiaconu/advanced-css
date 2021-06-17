@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:sass": "node-sass css/main.scss css/style.css -w",
-    "live-server": "live-server --wait=100",
+    "live-server": "live-server --wait=200",
     "start": "run-p compile:sass live-server"
   },
   "repository": {
