@@ -9,6 +9,10 @@ main {
   margin-top: -20vh;
 }
 
+.section-tours {
+  padding-bottom: 10rem;
+}
+
 .section-features {
   padding: 20rem 0 15rem 0;
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-4.jpg);
@@ -19,4 +23,10 @@ main {
   & > * {
     transform: skewY(7deg);
   }
+}
+
+.section-stories {
+  position: relative;
+  padding: 15rem 0;
+  background-color: #ffffff40;
 }
