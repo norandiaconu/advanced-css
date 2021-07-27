@@ -762,14 +762,20 @@ body {
     background-color: transparent;
     color: #777; }
 
+.orientation {
+  padding-left: 10rem; }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #7ed56faf, #28b48598), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56faf, #28b48598), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right bottom, #7ed56faf, #28b48598), url(../img/hero.jpg); } }
   @media (max-width: 56.25em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -837,7 +843,7 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -20rem;
   z-index: 15;
   opacity: 0;
   width: 0;
@@ -879,6 +885,7 @@ body {
   transform: scale(80); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
+  left: 0;
   opacity: 1;
   width: 100%; }
 
