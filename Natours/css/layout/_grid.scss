@@ -12,11 +12,6 @@
     }
   }
 
-  @include respond(tablet) {
-    max-width: 50rem;
-    padding: 0 3rem;
-  }
-
   @include clearfix;
 
   [class^="col"] {
@@ -25,14 +20,18 @@
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
 
-      @include respond(tablet) {
-        margin-right: 0;
-        margin-bottom: $gutter-vertical-small;
+      &:not([class^="col-"]) {
+        @include respond(tablet) {
+          margin-right: 0;
+          margin-bottom: $gutter-vertical-small;
+        }
       }
     }
 
-    @include respond(tablet) {
-      width: 100% !important;
+    &:not([class^="col-"]) {
+      @include respond(tablet) {
+        width: 100% !important;
+      }
     }
   }
 
@@ -70,6 +69,11 @@
   &__main {
     background-color: transparent;
     color: $color-grey-dark;
+
+    @include respond(tablet) {
+      max-width: 50rem;
+      padding: 0 3rem;
+    }
   }
 }
 

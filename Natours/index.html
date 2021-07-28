@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      if (window.location.href.includes("/Natours/")) {
+        link.href = "css/style.min.css";
+      } else {
+        link.href = "css/style.css";
+        var link2 = document.createElement("link");
+        link2.rel = "stylesheet";
+        link2.href = "css/icon-font.css";
+        document.head.appendChild(link2);
+      }
+      document.head.appendChild(link);
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
-
-    <link rel="stylesheet" href="css/icon-font.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
     <title>Natours | Exciting tours for adventurous people</title>
@@ -288,7 +299,7 @@
         </div>
       </section>
       <section class="section-book">
-        <div class="row">
+        <div class="row row__main">
           <div class="book">
             <div class="book__form">
               <form action="#" class="form">
@@ -340,7 +351,7 @@
           />
         </picture>
       </div>
-      <div class="row">
+      <div class="row row__main">
         <div class="col1-of-2">
           <div class="footer__navigation">
             <ul class="footer__list">
