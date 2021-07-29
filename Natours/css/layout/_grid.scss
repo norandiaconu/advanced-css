@@ -78,5 +78,11 @@
 }
 
 .orientation {
-  padding-left: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__picture {
+    padding-left: 10rem;
+  }
 }
