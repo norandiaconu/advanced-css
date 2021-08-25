@@ -1,39 +1,39 @@
 .container-flex {
-  padding: 10px;
-  height: 1000px;
+    padding: 10px;
+    height: 1000px;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-  flex-wrap: wrap;
-  align-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 .item {
-  background-color: var(--grey-dark-1);
-  padding: 30px;
-  margin: 5px;
-  color: #fff;
-  font-size: 40px;
+    background-color: var(--grey-dark-1);
+    padding: 30px;
+    margin: 5px;
+    color: #fff;
+    font-size: 40px;
 }
 
 .i2 {
-  height: 200px;
-  /*
+    height: 200px;
+    /*
     flex-basis: 300px;
     flex-shrink: 0;
   */
-  flex: 0 1 300px;
+    flex: 0 1 300px;
 }
 
 .i3 {
-  order: 1;
-  flex: 1;
+    order: 1;
+    flex: 1;
 }
 
 .i4 {
-  align-self: flex-end;
-  order: -1;
+    align-self: flex-end;
+    order: -1;
 }
