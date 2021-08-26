@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"compile:sass": "sass css/main.scss css/style.css --no-source-map -w",
-		"live-server": "live-server --wait=200",
+		"live-server": "live-server",
 		"start": "run-p compile:sass live-server",
 		"compile": "sass css/main.scss css/style.min.css --no-source-map",
 		"prefix": "postcss css/style.min.css --use autoprefixer -o css/style.min.css",
@@ -20,12 +20,12 @@
 	"author": "Noran Diaconu",
 	"license": "ISC",
 	"devDependencies": {
-		"autoprefixer": "^10.3.1",
+		"@compodoc/live-server": "^1.2.2",
+		"autoprefixer": "^10.3.2",
 		"concat": "^1.0.3",
-		"live-server": "^1.2.1",
 		"npm-run-all": "^4.1.5",
 		"postcss": "^8.3.6",
 		"postcss-cli": "^8.3.1",
-		"sass": "^1.37.5"
+		"sass": "^1.38.1"
 	}
 }

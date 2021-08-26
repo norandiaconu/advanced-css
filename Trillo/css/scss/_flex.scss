@@ -1,6 +1,6 @@
 .container-flex {
     padding: 10px;
-    height: 1000px;
+    height: 400px;
 
     display: flex;
     flex-direction: row;
@@ -36,4 +36,19 @@
 .i4 {
     align-self: flex-end;
     order: -1;
+}
+
+.name {
+    font-size: 2rem;
+    color: var(--grey-dark-1);
+}
+
+.icon {
+    height: 4em;
+    width: 4em;
+}
+
+.glyph {
+    display: flex;
+    align-items: center;
 }
