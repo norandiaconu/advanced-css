@@ -9,7 +9,9 @@
     --grey-dark-1: #333;
     --grey-dark-2: #777;
     --grey-dark-3: #999;
+    --shadow-light: 0 2rem 6rem #00000030;
     --shadow-dark: 0 2rem 6rem #00000090;
+    --line: 1px solid var(--grey-light-3);
 }
 
 * {
