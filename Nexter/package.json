@@ -1,25 +1,32 @@
 {
-  "name": "Nexter",
-  "version": "1.0.0",
-  "description": "Nexter webpage",
-  "main": "index.js",
-  "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
-
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
-  },
-  "author": "Jonas",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "concat": "^1.0.3",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1"
-  }
+	"name": "Nexter",
+	"version": "1.0.0",
+	"description": "Nexter App",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"compile:sass": "sass css/main.scss css/style.css --no-source-map -w",
+		"live-server": "live-server",
+		"start": "run-p compile:sass live-server",
+		"compile": "sass css/main.scss css/style.min.css --no-source-map",
+		"prefix": "postcss css/style.min.css --use autoprefixer -r",
+		"compress": "sass css/style.min.css css/style.min.css --no-source-map --style compressed",
+		"build": "run-s compile prefix compress"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/norandiaconu/advanced-css.git"
+	},
+	"author": "Noran Diaconu",
+	"license": "ISC",
+	"browserslist": ["last 2 versions"],
+	"devDependencies": {
+		"@compodoc/live-server": "^1.2.2",
+		"autoprefixer": "^10.3.3",
+		"concat": "^1.0.3",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.3.6",
+		"postcss-cli": "^8.3.1",
+		"sass": "^1.38.2"
+	}
 }
