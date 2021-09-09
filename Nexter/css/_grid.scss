@@ -2,6 +2,11 @@ body {
     background-color: black;
 }
 
+.section {
+    color: white;
+    text-align: center;
+}
+
 .container {
     background-color: grey;
     width: 1000px;
@@ -39,6 +44,45 @@ body {
             "box1 box2 box3 side"
             "main main main side"
             "foot foot foot foot";
+    }
+
+    &__6 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row;
+        grid-auto-columns: 0.5fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__7 {
+        grid-auto-rows: 80px;
+        grid-auto-flow: row dense;
+        grid-auto-columns: 0.5fr;
+        grid-template-rows: repeat(2, 100px);
+        grid-template-columns: repeat(2, 200px);
+        height: 1000px;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    &__8 {
+        grid-template-rows: repeat(2, minmax(150px, min-content));
+        grid-template-columns: max-content 1fr 1fr min-content;
+        gap: 0px;
+    }
+
+    &__9 {
+        width: 90%;
+        grid-template-rows: repeat(2, minmax(150px, 1fr));
+        grid-template-columns: minmax(200px, 300px) repeat(3, 1fr);
+        gap: 0px;
+    }
+
+    &__10 {
+        grid-template-rows: repeat(2, minmax(150px, min-content));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: 150px;
+        gap: 0px;
     }
 }
 
@@ -165,5 +209,57 @@ body {
 
     &--footer-area {
         grid-area: foot;
+    }
+
+    &--flow1 {
+        align-self: start;
+        justify-self: start;
+    }
+
+    &--flow4 {
+        background-color: crimson;
+        grid-row: 2 / span 3;
+    }
+
+    &--flow6 {
+        background-color: lightcoral;
+        grid-row: 2 / span 2;
+    }
+
+    &--flow7 {
+        background-color: palevioletred;
+        grid-column: 1 / -1;
+    }
+
+    &--minmax1 {
+        background-color: orangered;
+    }
+
+    &--minmax2 {
+        background-color: yellowgreen;
+    }
+
+    &--minmax3 {
+        background-color: blueviolet;
+    }
+
+    &--minmax4 {
+        background-color: palevioletred;
+    }
+
+    &--minmax5 {
+        background-color: royalblue;
+    }
+
+    &--minmax6 {
+        background-color: goldenrod;
+    }
+
+    &--minmax7 {
+        background-color: crimson;
+    }
+
+    &--minmax8 {
+        background-color: darkslategrey;
     }
 }
