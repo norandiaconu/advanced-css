@@ -35,6 +35,7 @@ body {
 }
 
 .container {
+    background-color: $color-grey-light-1;
     display: grid;
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
     grid-template-columns:
@@ -43,9 +44,4 @@ body {
             [col-start] minmax(min-content, 14rem) [col-end]
         )
         [center-end] minmax(6rem, 1fr) [full-end];
-
-    & > * {
-        padding: 40px;
-        font-size: 3rem;
-    }
 }
