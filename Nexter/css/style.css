@@ -125,8 +125,24 @@ body {
 }
 
 .story__pictures {
-  background-color: #c69963;
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
   grid-column: full-start/col-end 4;
+  display: grid;
+  grid-template: repeat(6, 1fr)/repeat(6, 1fr);
+  align-items: center;
+}
+.story__img--1 {
+  width: 100%;
+  grid-row: 2/6;
+  grid-column: 2/6;
+  box-shadow: 0 2rem 5rem #00000070;
+}
+.story__img--2 {
+  width: 115%;
+  grid-row: 4/6;
+  grid-column: 4/7;
+  z-index: 1;
+  box-shadow: 0 2rem 5rem #00000090;
 }
 .story__content {
   background-color: #f9f7f6;
@@ -144,8 +160,27 @@ body {
 }
 
 .homes {
-  background-color: #101d2c;
   grid-column: center-start/center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 7rem;
+}
+
+.home {
+  background-color: #aaa;
+}
+.home__img {
+  width: 100%;
+}
+.home__like {
+  fill: #c69963;
+  height: 3rem;
+  width: 3rem;
+}
+.home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+  height: 2rem;
+  width: 2rem;
 }
 
 .gallery {
