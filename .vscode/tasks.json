@@ -39,6 +39,24 @@
             "clear": false,
             "close": true
         }
+    },
+    {
+        "type": "npm",
+        "script": "build",
+        "path": "Nexter/",
+        "group": "build",
+        "problemMatcher": [],
+        "label": "npm: build - Nexter",
+        "detail": "run-s compile prefix compress",
+        "presentation": {
+            "echo": true,
+            "reveal": "always",
+            "focus": false,
+            "panel": "shared",
+            "showReuseMessage": true,
+            "clear": false,
+            "close": true
+        }
     }
 ]
 }
