@@ -19,14 +19,16 @@
 	},
 	"author": "Noran Diaconu",
 	"license": "ISC",
-	"browserslist": ["last 2 versions"],
+	"browserslist": [
+		"last 2 versions"
+	],
 	"devDependencies": {
 		"@compodoc/live-server": "^1.2.2",
 		"autoprefixer": "^10.3.3",
 		"concat": "^1.0.3",
 		"npm-run-all": "^4.1.5",
-		"postcss": "^8.3.6",
-		"postcss-cli": "^8.3.1",
+		"postcss": "8.4.18",
+		"postcss-cli": "10.0.0",
 		"sass": "^1.38.2"
 	}
 }
