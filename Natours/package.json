@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:sass": "sass css/main.scss css/style.css --no-source-map -w",
-    "live-server": "live-server --wait=200",
+    "live-server": "live-server",
     "start": "run-p compile:sass live-server",
     "compile": "sass css/main.scss css/style.min.css --no-source-map",
     "concat": "concat -o css/style.min.css css/icon-font.css css/style.min.css",
@@ -21,10 +21,10 @@
   "author": "Noran Diaconu",
   "license": "ISC",
   "devDependencies": {
+    "@compodoc/live-server": "^1.2.3",
     "autoprefixer": "^10.3.1",
     "concat": "^1.0.3",
-    "live-server": "^1.2.1",
-    "npm-run-all": "^4.1.5",
+    "new-run-all": "^1.0.2",
     "postcss": "8.4.18",
     "postcss-cli": "10.0.0",
     "sass": "^1.36.0"
