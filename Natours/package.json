@@ -1,10 +1,5 @@
 {
-  "name": "natours",
-  "version": "1.0.0",
-  "description": "Landing page for Natours",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "compile:sass": "sass css/main.scss css/style.css --no-source-map -w",
     "live-server": "live-server",
     "start": "run-p compile:sass live-server",
@@ -14,19 +9,5 @@
     "compress": "sass css/style.min.css css/style.min.css --no-source-map --style compressed",
     "build": "run-s compile concat prefix compress"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/norandiaconu/advanced-css.git"
-  },
-  "author": "Noran Diaconu",
-  "license": "ISC",
-  "devDependencies": {
-    "@compodoc/live-server": "^1.2.3",
-    "autoprefixer": "^10.3.1",
-    "concat": "^1.0.3",
-    "new-run-all": "^1.0.2",
-    "postcss": "8.4.18",
-    "postcss-cli": "10.0.0",
-    "sass": "^1.36.0"
-  }
+  "license": "ISC"
 }
