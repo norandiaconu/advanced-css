@@ -1,16 +1,17 @@
 {
   "name": "advanced-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Natours, Nexter, and Trillo apps",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-natours": "yarn --cwd Natours start",
-    "start-nexter": "yarn --cwd Nexter start",
-    "start-trillo": "yarn --cwd Trillo start",
-    "build-natours": "yarn --cwd Natours build",
-    "build-nexter": "yarn --cwd Nexter build",
-    "build-trillo": "yarn --cwd Trillo build",
-    "full": "run-p build-natours build-nexter build-trillo"
+    "start": "live-server",
+    "build": "run-p build-natour build-nexter build-trillo",
+    "start-natour": "npm run start --prefix Natours",
+    "start-nexter": "npm run start --prefix Nexter",
+    "start-trillo": "npm run start --prefix Trillo",
+    "build-natour": "npm run build --prefix Natours",
+    "build-nexter": "npm run build --prefix Nexter",
+    "build-trillo": "npm run build --prefix Trillo"
   },
   "repository": {
     "type": "git",
@@ -21,16 +22,15 @@
   "browserslist": [
     "last 2 versions"
   ],
+  "dependencies": {
+    "@compodoc/live-server": "~1.2.3"
+  },
   "devDependencies": {
-    "@compodoc/live-server": "^1.2.3",
     "autoprefixer": "^10.4.14",
     "concat": "^1.0.3",
     "npm-run-all2": "^6.0.6",
-    "postcss": "8.4.18",
+    "postcss": "~8.4.38",
     "postcss-cli": "^10.1.0",
     "sass": "^1.43.5"
-  },
-  "resolutions": {
-    "postcss-cli/postcss-load-config/yaml": "2.2.2"
   }
 }
